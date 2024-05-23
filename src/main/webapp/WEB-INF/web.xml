@@ -35,5 +35,12 @@
   <security-role>
   	<role-name>registeredUser</role-name>
   </security-role>
-  
+  <servlet>
+        <servlet-name>ErrorHandler</servlet-name>
+        <servlet-class>com.control.ErrorHandlerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorHandler</servlet-name>
+        <url-pattern>/error-handler</url-pattern>
+    </servlet-mapping>
 </web-app>
